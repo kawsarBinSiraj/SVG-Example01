@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Svg example</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<style>
+
+* {
+  margin: 0;
+  margin: 0;
+}
+
+#svg {
+	position: absolute;
+	left: 10%;
+	top: 30%;
+}
+
+svg {
+  overflow: visible !important;
+  font-family: 'Shrikhand', cursive;
+}
+
+svg text {
+  stroke-width:2px;
+  stroke-dasharray:1000;
+  stroke-dashoffset: 1000;
+  fill: none;
+  animation: dash 5s cubic-bezier(.82,.74,.51,-0.52) alternate infinite;
+}
+
+
+ @keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+    fill:none;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill:#113C81;
+
+  }
+} 
+
+
+</style>
+</head>
+<body>
+
+ 
+<div id="svg"> 
+    <div class="this"> 
+		<svg xmlns="http://www.w3.org/2000/svg">
+			<g>
+			  <text xml:space="preserve" text-anchor="start" id="svg_2" font-size="6rem" y="200" x="0" stroke-width="0" stroke="#113C81">
+				- kawsarhossain.com
+			  </text>
+			  <text xml:space="preserve" text-anchor="start" id="svg_2" font-size="3rem" y="100" x="0" stroke-width="0" stroke="#113C81">
+				- Kawsar Ibn Siraj
+			  </text> 
+			 </g>
+		</svg>
+    </div>
+</div>
+  
+  
+</body>
+</html>
